@@ -5,10 +5,33 @@
     --dark-purple: hsl(292, 42%, 14%);
 }
 
+
+
+.work-sans-400 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.work-sans-600 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.work-sans-700 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     display: flex;
     height: 100svh;
-    align-items: center;
+    align-items: safe center;
     justify-content: center;
     background-image: url('../assets/images/background-pattern-mobile.svg');
     background-repeat: no-repeat;
@@ -18,4 +41,15 @@ body {
 .card {
     display: flex;
     flex-direction: column;
+    inline-size: 20.5rem;
+    min-inline-size: 20.5rem;
+    /* align-content: center; */
+    /* block-size:20rem; */
+    /* min-block-size: 24rem; */
+    /* min-width: 20rem; */
+}
+
+.heading-con {
+    display: flex;
+    align-items: center;
 }
