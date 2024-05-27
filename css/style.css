@@ -131,7 +131,7 @@ main>div:not(.heading-con) {
 
         border-radius: 16px;
 
-        padding-inline: 2.7rem;
+        padding-inline: 2.5rem;
         /* padding-block: 6rem 0rem; */
     }
 
@@ -141,7 +141,15 @@ main>div:not(.heading-con) {
     }
 
     .heading-con>img {
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .q-heading-con>h2 {
+            font-size: 1.13rem;
+            /* color: var(--dark-purple);å */
+            max-width: 41ch;
+    
+            line-height: 1.35;
     }
 }
