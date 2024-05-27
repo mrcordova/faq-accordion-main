@@ -105,6 +105,8 @@ main>div:not(.heading-con, :nth-child(2)) {
 }
 .q-heading-con>img:is(:hover, :focus) {
     cursor: pointer;
+    /* mask-image: image(url('../assets/images/icon-minus.svg'), skyblue); */
+    /* mask-mode: alpha; */
     /* background: url('../assets/images/icon-minus.svg') red; */
     /* border-radius: 40px; */
     /* background: linear-gradient(red, blue);
