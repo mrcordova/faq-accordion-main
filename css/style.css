@@ -68,7 +68,10 @@ body {
     display: none;
 }
 .q-con {
-   
+   border-bottom: 1px solid var(--light-pink);
+}
+.q-con:last-child {
+    border-bottom: 0px;
 }
 .q-heading-con {
     display: flex;
