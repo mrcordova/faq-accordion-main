@@ -10,4 +10,12 @@ body {
     height: 100svh;
     align-items: center;
     justify-content: center;
+    background-image: url('../assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
 }
