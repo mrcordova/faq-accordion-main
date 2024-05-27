@@ -73,8 +73,7 @@ body {
 .q-con>p {
     font-size: 0.88rem;
     color: var(--grayish-purple);
-    /* text-align: left; */
-    /* max-width: 40ch; */
+    padding-block: 1.25rem;
 }
 .q-con:last-child {
     border-bottom: 0px;
