@@ -99,6 +99,11 @@ main>div:not(.heading-con) {
     
     line-height: 1.35;
 }
+.q-heading-con>h2:hover {
+    cursor: pointer;
+    filter: brightness(4);
+    
+}
 .q-heading-con>img {
     margin-inline-start: auto;
     /* z-index:  0; */
