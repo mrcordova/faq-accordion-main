@@ -60,6 +60,8 @@ body {
     align-items: center;
     gap: 22px;
     color: var(--dark-purple);
+    margin-block-end: 0.8rem;
+    
 }
 
 .hide {
@@ -70,11 +72,14 @@ body {
 }
 .q-heading-con {
     display: flex;
+    padding-block-start: 0.2rem;
 }
 .q-heading-con>h2 {
     font-size: 1rem;
     color: var(--dark-purple);
     max-width: 21ch;
+    
+    line-height: 1.35;
 }
 .q-heading-con>img {
     margin-inline-start: auto;
