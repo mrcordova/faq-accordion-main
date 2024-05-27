@@ -35,6 +35,7 @@ body {
     justify-content: center;
     background-image: url('../assets/images/background-pattern-mobile.svg');
     background-repeat: no-repeat;
+    background-color: var(--light-pink);
     
 }
 
@@ -43,6 +44,7 @@ body {
     flex-direction: column;
     inline-size: 20.5rem;
     min-inline-size: 20.5rem;
+    background-color: var(--white);
     /* align-content: center; */
     /* block-size:20rem; */
     /* min-block-size: 24rem; */
@@ -53,4 +55,17 @@ body {
     display: flex;
     align-items: center;
     gap: 22px;
+    color: var(--dark-purple);
+}
+
+.hide {
+    display: none;
+}
+.q-con {
+   
+}
+
+.q-con>h2 {
+    font-size: 1rem;
+    display: flex;
 }
