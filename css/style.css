@@ -45,6 +45,10 @@ body {
     inline-size: 20.5rem;
     min-inline-size: 20.5rem;
     background-color: var(--white);
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+
+    border-radius: 8px;
     /* align-content: center; */
     /* block-size:20rem; */
     /* min-block-size: 24rem; */
