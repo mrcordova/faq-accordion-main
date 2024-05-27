@@ -124,4 +124,24 @@ main>div:not(.heading-con) {
     body {
         background-image: url('../assets/images/background-pattern-desktop.svg');
     }
+
+    .card {
+        inline-size: 37.5rem;
+        max-inline-size: 37.5rem;
+
+        border-radius: 16px;
+
+        padding-inline: 2.7rem;
+        /* padding-block: 6rem 0rem; */
+    }
+
+    .heading-con {
+        font-size: 1.75rem;
+        
+    }
+
+    .heading-con>img {
+        width: 40px;
+        height: 40px;
+    }
 }
