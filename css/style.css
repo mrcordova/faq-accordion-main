@@ -101,4 +101,17 @@ main>div:not(.heading-con, :nth-child(2)) {
 }
 .q-heading-con>img {
     margin-inline-start: auto;
+    /* z-index:  0; */
 }
+.q-heading-con>img:is(:hover, :focus) {
+    cursor: pointer;
+    /* background: url('../assets/images/icon-minus.svg') red; */
+    /* border-radius: 40px; */
+    /* background: linear-gradient(red, blue);
+    mask-image: url('../assets/images/icon-minus.svg');
+    mask-mode: alpha; */
+    /* mask-image: linear-gradient(black, black);
+    z-index: 1; */
+}
+
+
