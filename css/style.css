@@ -68,10 +68,14 @@ body {
 .q-con {
    
 }
-
-.q-con>h2 {
-    font-size: 1rem;
+.q-heading-con {
     display: flex;
+}
+.q-heading-con>h2 {
+    font-size: 1rem;
     color: var(--dark-purple);
-    justify-content: space-between;
+    max-width: 21ch;
+}
+.q-heading-con>img {
+    margin-inline-start: auto;
 }
