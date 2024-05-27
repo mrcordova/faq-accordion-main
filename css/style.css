@@ -69,7 +69,7 @@ body {
     display: none;
 }
 
-main>div:not(.heading-con, :nth-child(2)) {
+main>div:not(.heading-con) {
     /* background-color: red; */
     padding-block: 1rem 1.1rem;
 }
@@ -79,7 +79,7 @@ main>div:not(.heading-con, :nth-child(2)) {
 .q-con>p {
     font-size: 0.88rem;
     color: var(--grayish-purple);
-    padding-block: 1.25rem;
+    padding-block: 1.25rem 0rem;
 }
 
 
