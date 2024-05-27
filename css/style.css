@@ -115,5 +115,8 @@ main>div:not(.heading-con) {
     /* mask-image: linear-gradient(black, black);
     z-index: 1; */
 }
-
-
+@media(min-width: 376px ) {
+    body {
+        background-image: url('../assets/images/background-pattern-desktop.svg');
+    }
+}
