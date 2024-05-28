@@ -27,6 +27,13 @@
     font-weight: 700;
     font-style: normal;
 }
+.anim {
+    opacity: 1;
+    display: block;
+    transition:
+        opacity 1s,
+        display 1s allow-discrete;
+}
 
 body {
     display: flex;
@@ -39,41 +46,41 @@ body {
     
 }
 
-.anim {
-    opacity: 1;
-    display: block;
-    transition:
-            opacity 1s,
-            display 1s allow-discrete;
-}
+
 
 .card {
     display: flex;
     flex-direction: column;
-    inline-size: 20.5rem;
-    min-inline-size: 20.5rem;
     background-color: var(--white);
-    padding-inline: 1.5rem;
-    padding-block: 1.2rem 0rem;
 
     
-    border-radius: 8px;
-    /* align-content: center; */
-    /* block-size:20rem; */
-    /* min-block-size: 24rem; */
-    /* min-width: 20rem; */
+
+    inline-size: clamp(20.5rem, 14.4965rem + 25.6150vw, 37.55rem);
+    padding-inline: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+   
+    padding-block: clamp(1.2rem, 1.1296rem + 0.3005vw, 1.4rem) clamp(0rem, -0.4930rem + 2.1033vw, 1.4rem);;
+
+    border-radius: clamp(0.5rem, 0.3239rem + 0.7512vw, 1rem);
+   
 }
 
 .heading-con {
     display: flex;
     align-items: center;
-    /* text-align: center; */
     gap: 22px;
     color: var(--dark-purple);
-    margin-block-end: 0.8rem;
-    
-}
 
+    margin-block-start: clamp(0rem, -0.0704rem + 0.3005vw, 0.2rem);
+    /* margin-block-end: clamp(0rem, 1.0817rem + -1.2019vw, 0.8rem); */
+    margin-block-end: clamp(0rem, -1.0817rem + 1.2019vw, 0.8rem);
+    font-size: clamp(1rem, 0.7359rem + 1.1268vw, 1.75rem);
+    
+     
+}
+.heading-con>img {
+    width: clamp(1.5625rem, 1.2324rem + 1.4085vw, 2.5rem);
+    height: clamp(1.5625rem, 1.2324rem + 1.4085vw, 2.5rem);
+}
 .hide {
     display: none;
     opacity: 0;
@@ -83,14 +90,13 @@ body {
 }
 
 main>div:not(.heading-con) {
-    /* background-color: red; */
-    padding-block: 1rem 1.1rem;
+    padding-block: clamp(1rem, 0.9648rem + 0.1502vw, 1.1rem) 1.1rem;
 }
 .q-con {
    border-bottom: 1px solid var(--light-pink);
 }
 .q-con>p {
-    font-size: 0.88rem;
+    font-size: clamp(0.88rem, 0.8377rem + 0.1803vw, 1rem);
     color: var(--grayish-purple);
     padding-block: 1.25rem 0rem;
 }
@@ -102,11 +108,11 @@ main>div:not(.heading-con) {
 }
 .q-heading-con {
     display: flex;
-    padding-block-start: 0.2rem;
+    padding-block-start: clamp(0.2rem, -0.0113rem + 0.9014vw, 0.8rem);
     align-items: center;
 }
 .q-heading-con>h2 {
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.9577rem + 0.1803vw, 1.12rem);
     color: var(--dark-purple);
     max-width: 21ch;
     
@@ -119,77 +125,27 @@ main>div:not(.heading-con) {
 }
 .q-heading-con>img {
     margin-inline-start: auto;
-    /* z-index:  0; */
 }
 .q-heading-con>img:is(:hover, :focus) {
     cursor: pointer;
-    /* mask-image: image(url('../assets/images/icon-minus.svg'), skyblue); */
-    /* mask-mode: alpha; */
-    /* background: url('../assets/images/icon-minus.svg') red; */
-    /* border-radius: 40px; */
-    /* background: linear-gradient(red, blue);
-    mask-image: url('../assets/images/icon-minus.svg');
-    mask-mode: alpha; */
-    /* mask-image: linear-gradient(black, black);
-    z-index: 1; */
+    
 }
 @media(min-width: 376px ) {
     body {
-        /* margin-block-start: 2.2rem; */
-        /* padding-block: 9rem 0rem; */
+       
         background-image: url('../assets/images/background-pattern-desktop.svg');
     }
 
-    .card {
-        inline-size: 37.55rem;
-        max-inline-size: 38rem;
 
-        /* block-size: 35.3rem; */
-        padding-block: 1.4rem 1.4rem;
-
-        border-radius: 16px;
-
-        padding-inline: 2.5rem;
-        
-    }
-
-    .heading-con {
-        font-size: 1.75rem;
-        margin-block-start: 0.2rem;
-        margin-block-end: 0rem;
-        
-        /* margin-block-start: 0.3rem; */
-        /* padding-block-end: 4rem; */
-        
-    }
-
-    .heading-con>img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-    main>div:not(.heading-con) {
-        padding-block: 1.1rem 1.1rem;
-
-    }
 
     .q-heading-con>h2 {
-            font-size: 1.12rem;
-            /* color: var(--dark-purple);å */
+            
             max-width: 41ch;
     
            
     }
 
-    .q-con>p {
-        font-size: 1rem;
-       
-    }
-    .q-heading-con {
-        padding-block-start: 0.8rem;
-            /* padding-block-end: 1.4rem; */
-           
-    }
+   
 }
 
 
