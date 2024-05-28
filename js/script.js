@@ -1,12 +1,7 @@
 const qCon = document.querySelectorAll('.q-con');
 let showingPara = false;
 
-
-const showPara = (e) => {
-     
-    const para = e.currentTarget.querySelector('p');
-    const img = e.currentTarget.querySelector('img');
-
+const resetPara = (para, img) => {
     for (const qHeading of qCon) {
         const tempPara = qHeading.querySelector('p');
         const tempImg = qHeading.querySelector('img');
@@ -16,10 +11,18 @@ const showPara = (e) => {
         }
         
     }
+}
+ 
+const showPara = (e) => {
+     
+    const para = e.currentTarget.querySelector('p');
+    const img = e.currentTarget.querySelector('img');
+
+    resetPara(para, img);
 
   
     if (para.classList.contains('hide')) {
-        console.log(para);
+        
         para.classList.replace('hide', 'anim');
         img.src = `${String(img.src).replace('plus', 'minus') }`
         
