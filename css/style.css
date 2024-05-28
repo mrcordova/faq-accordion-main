@@ -40,8 +40,11 @@ body {
 }
 
 .anim {
-    /* opacity: 1; */
+    opacity: 1;
     display: block;
+    transition:
+            opacity 1s,
+            display 1s allow-discrete;
 }
 
 .card {
@@ -73,10 +76,10 @@ body {
 
 .hide {
     display: none;
-    /* opacity: 0; */
-    /* transition:
+    opacity: 0;
+    transition:
         opacity 1s,
-        display 1s allow-discrete; */
+        display 1s allow-discrete;
 }
 
 main>div:not(.heading-con) {
@@ -191,8 +194,8 @@ main>div:not(.heading-con) {
 
 
 
-/* @starting-style {
+@starting-style {
     .anim {
         opacity: 0;
     }
-} */
+}

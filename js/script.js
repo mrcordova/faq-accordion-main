@@ -6,7 +6,7 @@ const resetPara = (para, img) => {
         const tempPara = qHeading.querySelector('p');
         const tempImg = qHeading.querySelector('img');
         if (!tempPara.classList.contains('hide') && tempPara !== para) {
-            tempPara.classList.add('hide');
+            tempPara.classList.replace('anim', 'hide');
             tempImg.src = `${String(img.src).replace('minus', 'plus') }`
         }
         
@@ -27,7 +27,7 @@ const showPara = (e) => {
         img.src = `${String(img.src).replace('plus', 'minus') }`
         
     } else {
-        console.log("here");
+    
         para.classList.replace('anim','hide');
         img.src = `${String(img.src).replace('minus', 'plus') }`
     }
