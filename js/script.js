@@ -3,19 +3,31 @@ let showingPara = false;
 
 
 const showPara = (e) => {
-    // console.log(e.currentTarget); 
+     
     const para = e.currentTarget.querySelector('p');
     const img = e.currentTarget.querySelector('img');
+
+    for (const qHeading of qCon) {
+        const tempPara = qHeading.querySelector('p');
+        const tempImg = qHeading.querySelector('img');
+        if (!tempPara.classList.contains('hide') && tempPara !== para) {
+            tempPara.classList.add('hide');
+            tempImg.src = `${String(img.src).replace('minus', 'plus') }`
+        }
+        
+    }
+
+  
     if (para.classList.contains('hide')) {
-        para.classList.remove('hide');
+        console.log(para);
+        para.classList.replace('hide', 'anim');
         img.src = `${String(img.src).replace('plus', 'minus') }`
         
-
     } else {
-        para.classList.add('hide');
+        console.log("here");
+        para.classList.replace('anim','hide');
         img.src = `${String(img.src).replace('minus', 'plus') }`
     }
-    console.log(img.src);
 }
 
 for (const qHeading of qCon) {

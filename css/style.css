@@ -39,6 +39,11 @@ body {
     
 }
 
+.anim {
+    /* opacity: 1; */
+    display: block;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -68,6 +73,10 @@ body {
 
 .hide {
     display: none;
+    /* opacity: 0; */
+    /* transition:
+        opacity 1s,
+        display 1s allow-discrete; */
 }
 
 main>div:not(.heading-con) {
@@ -179,3 +188,11 @@ main>div:not(.heading-con) {
            
     }
 }
+
+
+
+/* @starting-style {
+    .anim {
+        opacity: 0;
+    }
+} */
