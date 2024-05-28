@@ -48,6 +48,7 @@ body {
     padding-inline: 1.5rem;
     padding-block: 1.2rem 0rem;
 
+    
     border-radius: 8px;
     /* align-content: center; */
     /* block-size:20rem; */
@@ -122,21 +123,27 @@ main>div:not(.heading-con) {
 }
 @media(min-width: 376px ) {
     body {
+        /* margin-block-start: 2.2rem; */
+        /* padding-block: 9rem 0rem; */
         background-image: url('../assets/images/background-pattern-desktop.svg');
     }
 
     .card {
-        inline-size: 37.5rem;
-        max-inline-size: 37.5rem;
+        inline-size: 37.55rem;
+        max-inline-size: 38rem;
+
+        /* block-size: 35.3rem; */
+        padding-block: 2rem 2.5rem;
 
         border-radius: 16px;
 
         padding-inline: 2.5rem;
-        /* padding-block: 6rem 0rem; */
+        
     }
 
     .heading-con {
         font-size: 1.75rem;
+        /* padding-block-end: 4rem; */
         
     }
 
@@ -145,11 +152,25 @@ main>div:not(.heading-con) {
         height: 2.5rem;
     }
 
+    main>div:not(.heading-con) {
+        padding-block: 1.7rem 1.1rem;
+
+    }
+
     .q-heading-con>h2 {
-            font-size: 1.13rem;
+            font-size: 1.12rem;
             /* color: var(--dark-purple);å */
             max-width: 41ch;
     
-            line-height: 1.35;
+           
+    }
+
+    .q-con>p {
+        font-size: 1rem;
+       
+    }
+    .q-heading-con {
+            /* padding-block-end: 1.4rem; */
+           
     }
 }
